@@ -92,6 +92,24 @@ const STORAGE_KEY = "autoprime_users";
 const SESSION_KEY = "autoprime_session";
 const WISHLIST_KEY = "autoprime_wishlist";
 
+// ── Seed sample accounts on first load ───────────────────────────────────────
+const SAMPLE_ACCOUNTS: Record<string, { name: string; password: string }> = {
+  "demo@autoprime.in":  { name: "Demo User",    password: "demo1234" },
+  "rahul@autoprime.in": { name: "Rahul Mehta",  password: "rahul123" },
+  "priya@autoprime.in": { name: "Priya Sharma", password: "priya123" },
+};
+
+const seedSampleAccounts = () => {
+  const existing: Record<string, { name: string; password: string }> =
+    JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}");
+  let changed = false;
+  for (const [email, data] of Object.entries(SAMPLE_ACCOUNTS)) {
+    if (!existing[email]) { existing[email] = data; changed = true; }
+  }
+  if (changed) localStorage.setItem(STORAGE_KEY, JSON.stringify(existing));
+};
+seedSampleAccounts();
+
 const AuthProvider = ({ children }: { children: React.ReactNode }) => {
   const [user, setUser] = useState<User | null>(() => {
     try { return JSON.parse(localStorage.getItem(SESSION_KEY) || "null"); } catch { return null; }
