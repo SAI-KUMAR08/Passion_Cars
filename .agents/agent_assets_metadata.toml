@@ -1,0 +1,50 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "6083HlLzJbeQN07VK2P5c"
+uri = "file://artifacts/car-dealership/public/images/hero-showroom.png"
+type = "image"
+title = "Hero showroom wide shot"
+
+[[generated]]
+id = "xahpS5XeqIj9kepRJxM52"
+uri = "file://artifacts/car-dealership/public/images/car-suv.png"
+type = "image"
+title = "Luxury SUV"
+
+[[generated]]
+id = "pOfjGUjz5fmajpvedweJL"
+uri = "file://artifacts/car-dealership/public/images/car-sedan.png"
+type = "image"
+title = "Luxury Sedan"
+
+[[generated]]
+id = "mImFX6sZRHWa-s80xe3Du"
+uri = "file://artifacts/car-dealership/public/images/car-hatchback.png"
+type = "image"
+title = "Luxury Hatchback"
+
+[[generated]]
+id = "cDj5FPFEl2I9z38xI4QQ7"
+uri = "file://artifacts/car-dealership/public/images/car-crossover.png"
+type = "image"
+title = "Luxury Crossover"
+
+[[generated]]
+id = "N8iMxXtYjuAaIshpTI8g8"
+uri = "file://artifacts/car-dealership/public/images/car-pickup.png"
+type = "image"
+title = "Luxury Pickup Truck"
+
+[[generated]]
+id = "l0mzMUOH-w3MTxgvG4Uww"
+uri = "file://artifacts/car-dealership/public/images/car-sports.png"
+type = "image"
+title = "Luxury Sports Car"
+
+[[generated]]
+id = "5SRbDmso3nBwLojiFNgGB"
+uri = "file://artifacts/car-dealership/public/images/team.png"
+type = "image"
+title = "Dealership Team"
