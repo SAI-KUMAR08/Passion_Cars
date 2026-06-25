@@ -1,0 +1,10 @@
+{
+  "buildCommand": "pnpm run build",
+  "outputDirectory": "artifacts/car-dealership/dist/public",
+  "installCommand": "pnpm install",
+  "framework": null,
+  "devCommand": null,
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
